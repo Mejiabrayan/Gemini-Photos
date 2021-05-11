@@ -1,3 +1,3 @@
 # Gemini-Photos
-# Search Curated Photos using Pexel's API.
+Search Curated Photos using Pexel's API.
 
