@@ -80,6 +80,7 @@
 }
 
 .more {
+  text-align: center;
    padding: 1rem 3rem;
    background: #2e2e2e;
    color: #e8e8e8;
@@ -87,4 +88,28 @@
    cursor: pointer;
    font-size: 1.2rem;
    box-shadow: 5px 10px;
+   transition: all 0.5s;
+}
+.more span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.more span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.more:hover span {
+  padding-right: 25px;
+}
+
+.more:hover span:after {
+  opacity: 1;
+  right: 0;
 }
